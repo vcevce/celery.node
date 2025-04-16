@@ -11,7 +11,7 @@
     "dist": "tsc",
     "test": "mocha -r ts-node/register ./test/**/*",
     "prepublishOnly": "npm run dist & npm test",
-    "prepare": "npm run dist",
+    "postInstall": "npm run dist"
   },
   "repository": {
     "type": "git",
